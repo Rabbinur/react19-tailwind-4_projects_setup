@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors */
+  --color-current: currentColor;
+  --color-transparent: transparent;
+  --color-white: #ffffff;
+  --color-black: #040f0f;
+  --color-black-2: #040f0f;
+  --color-primary: #e4b578;
+  --color-secondary: #ac8c66;
+  --color-stroke: #e2e8f0;
+  --color-graydark: #333a48;
+  --color-greenD: #056c50;
+  --color-whiten: #f1f5f9;
+  --color-whiter: #f5f7fd;
+  --color-boxdark: #24303f;
+  --color-boxdark-2: #1a222c;
+  --color-strokedark: #2e3a47;
+  --color-form-strokedark: #3d4d60;
+  --color-form-input: #1d2a39;
+  --color-success: #219653;
+  --color-danger: #d34053;
+  --color-warning: #ffa70b;
+
+  /* Font Families */
+  --font-poppins: "Poppins", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-helvetica: "Helvetica", "Poppins";
+
+  /* Font Sizes */
+  --font-title-xxl: 44px;
+  --font-title-xl: 36px;
+  --font-title-xl2: 33px;
+  --font-title-lg: 28px;
+  --font-title-md: 24px;
+  --font-title-md2: 26px;
+  --font-title-sm: 20px;
+  --font-title-xsm: 18px;
+
+  /* Opacity */
+  --opacity-65: 0.65;
+
+  /* Border Width */
+  --border-6: 6px;
+
+  /* Shadows */
+  --shadow-default: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
+  --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-card-2: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-switcher: 0px 2px 4px rgba(0, 0, 0, 0.2), inset 0px 2px 2px #ffffff,
+    inset 0px -1px 1px rgba(0, 0, 0, 0.1);
+  --shadow-switch-1: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  --shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-2: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  --shadow-3: 0px 1px 5px rgba(0, 0, 0, 0.14);
+  --shadow-4: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  --shadow-5: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  --shadow-6: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  --shadow-7: -5px 0 0 #313d4a, 5px 0 0 #313d4a;
+  --shadow-8: 1px 0 0 #313d4a, -1px 0 0 #313d4a, 0 1px 0 #313d4a,
+    0 -1px 0 #313d4a, 0 3px 13px rgb(0 0 0 / 8%);
+
+  /* Z-Index */
+  --z-999999: 999999;
+  --z-99999: 99999;
+  --z-9999: 9999;
+  --z-999: 999;
+  --z-99: 99;
+  --z-9: 9;
+  --z-1: 1;
+
+  /* Keyframes */
+  --animate-rotating: rotating 0.3s ease-out;
+  --animate-marquee: marquee 0.3s ease-out;
+  @keyframes rotating {
+    0%,
+    100% {
+      transform: rotate(360deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Animations */
+  --animation-ping-once: ping 5s cubic-bezier(0, 0, 0.2, 1);
+  --animation-rotating: rotating 30s linear infinite;
+  --animation-spin-1.5: spin 1.5s linear infinite;
+  --animation-spin-2: spin 2s linear infinite;
+  --animation-spin-3: spin 3s linear infinite;
+  --animation-marquee: marquee 30s linear infinite;
+  --animation-reveal: reveal 30s linear infinite;
+}
